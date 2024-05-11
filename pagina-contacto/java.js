@@ -42,17 +42,20 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
 
         var firstName = document.getElementById("first_name").value;
+        var surname = document.getElementById("Surname_name").value;
         var emailAddress = document.getElementById("email_address").value;
         var phoneNumber = document.getElementById("phone_number").value;
         var message = document.getElementById("message").value;
 
         var firstNameError = document.getElementById("first_name_error");
+        var surnameNameError = document.getElementById("Surname_name_error");
         var emailAddressError = document.getElementById("email_address_error");
         var phoneNumberError = document.getElementById("phone_number_error");
         var messageError = document.getElementById("message_error");
 
         // Limpiamos los mensajes de error anteriores
         firstNameError.innerHTML = "";
+        surnameNameError.innerHTML = "";
         emailAddressError.innerHTML = "";
         phoneNumberError.innerHTML = "";
         messageError.innerHTML = "";
@@ -60,6 +63,10 @@ document.addEventListener("DOMContentLoaded", function() {
         // Verificamos si algún campo está vacío
         if (firstName === "") {
             firstNameError.innerHTML = "Por favor, complete este campo.";
+        }
+
+        if (surname === "") {
+            surnameNameError.innerHTML = "Por favor, complete este campo.";
         }
 
         if (emailAddress === "") {
@@ -78,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         // Si todos los campos están completos, enviamos el formulario
-        if (firstName !== "" && emailAddress !== "" && phoneNumber !== "" && message !== ""&& /^\d+$/.test(phoneNumber)) {
+        if (firstName !== "" &&  surname !== "" && emailAddress !== "" && phoneNumber !== "" && message !== ""&& /^\d+$/.test(phoneNumber)) {
             form.submit();
         }
     });

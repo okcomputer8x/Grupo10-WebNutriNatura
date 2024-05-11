@@ -48,6 +48,10 @@
             <label for="first_name">Nombre</label>
             <input type="text" name="first_name" id="first_name">
             <span class="error-message" id="first_name_error"></span>
+
+            <label for="Surname_name">Apellido</label>
+            <input type="text" name="Surname_name" id="Surname_name">
+            <span class="error-message" id="Surname_name_error"></span>
            
             <label for="email_address">Correo electrónico</label>
             <input type="email" name="email_address" id="email_address">
@@ -56,6 +60,22 @@
             <label for="phone_number">Teléfono</label>
             <input type="text" name="phone_number" id="phone_number">
             <span class="error-message" id="phone_number_error"></span>
+
+            <div class="input-optional">
+            <label for="location">Ubicacion(opcional)</label>
+            
+             <input type="radio" name="location" value="bsas"> Bs As
+             <input type="radio" name="location" value="interior"> Interior
+            </div>
+            
+            <div class="input-optional">
+            <label for="contacto">Medio preferido de contacto</label>
+            <select name="contacto" id="contacto">
+                <option>Telefono</option>
+                <option>Correo electrónico</option>
+            </select>
+            </div>
+    
             
             <label for="message">Mensaje</label>
             <textarea name="message" id="message"></textarea>

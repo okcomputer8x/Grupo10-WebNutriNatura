@@ -254,9 +254,19 @@ input {
     resize: none; /* saca el resizing de costado que viene por defecto */
 }
 
-.error-message{
-    display: block;
-    color: red;
+    input[type=radio] {
+    width: 10%;
+    color: #2bc0ae;
+    font-size: 30px;
+    }
+
+    .input-optional{
+        margin-bottom: 20px;
+    }
+
+    .error-message{
+        display: block;
+        color: red;
     
 }
 /* styles para contendor de contacto y iframe */
