@@ -263,6 +263,7 @@ input {
     .input-optional{
         margin-bottom: 20px;
     }
+    .input-optional p{display: inline-block;}
 
     .error-message{
         display: block;
